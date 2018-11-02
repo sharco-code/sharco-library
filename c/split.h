@@ -3,17 +3,17 @@
 
 char *split_before(char *a,char b){
     char *x;
-    for(short i; i<10;i++){
-        if(a[i]==b) break;
+    unsigned char i=0;
+    while(a[i]!=b) {
         x[i]=a[i];
+        i++;
     }
     return (char *)x;
 }
-
 char *split_after(char *a,char b){
     char *x;
     unsigned char j=0;
-    for(unsigned char i; i<10;i++){
+    for(unsigned chari;i<258;i++){
         if(j!=0){
             x[j-1]=a[i];
             j++;
@@ -21,6 +21,6 @@ char *split_after(char *a,char b){
         if(a[i]==b) j++;
     }
     return (char *)x;
-} 
+}
 
 #endif
