@@ -1,7 +1,7 @@
 #ifndef SPLIT_H
 #define SPLIT_H
 
-char *split_before(char *a,char b){
+char *split_before(char *a, char b) {
     char *x;
     unsigned char i=0;
     while(a[i]!=b) {
@@ -10,17 +10,18 @@ char *split_before(char *a,char b){
     }
     return (char *)x;
 }
-char *split_after(char *a,char b){
+char *split_after(char *a, char b) {
     char *x;
-    unsigned char j=0;
-    for(unsigned chari;i<258;i++){
+    unsigned char j=0, i=0;
+    while(a[i]!='\0') {
         if(j!=0){
             x[j-1]=a[i];
             j++;
         }
         if(a[i]==b) j++;
+        i++;
     }
     return (char *)x;
-}
+} 
 
 #endif
