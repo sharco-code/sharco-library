@@ -1,5 +1,5 @@
-#ifndef SPLIT_H
-#define SPLIT_H
+#ifndef CHARS_H
+#define CHARS_H
 
 char *split_before(char *a, char b) {
     char *x;
