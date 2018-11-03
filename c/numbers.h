@@ -2,7 +2,7 @@
 #define NUMBERS_H
 
 // returns how many digits the number n has
-// retorna cuantos dijitos tiene el numero n
+// retorna cuantos dígitos tiene el numero n
 unsigned char digit(int n){
     unsigned char c=1;
     while(n>9){
@@ -13,10 +13,9 @@ unsigned char digit(int n){
 }
 
 // compare if there are 2 consecutive numbers in the number n (requires "digit()")
-// compara si hay 2 numero siguales en el numero n (requiere "digit()")
+// compara si hay 2 numeros iguales en el numero n (requiere "digit()")
 unsigned char compare(int n){
-    unsigned char d=digit(n);
-    unsigned char s[d],i=(d-1),m;
+    unsigned char d=digit(n),s[d],i=(d-1),m;
     while(n!=0){
         m=n%10;
         n=n/10;
