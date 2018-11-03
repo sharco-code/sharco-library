@@ -12,10 +12,10 @@ unsigned char digit(int n){
     return c;
 }
 
-//compare if there are 2 consecutive numbers in the number n
-//compara si hay 2 numero siguales en el numero n
+// compare if there are 2 consecutive numbers in the number n (requires "digit()")
+// compara si hay 2 numero siguales en el numero n (requiere "digit()")
 unsigned char compare(int n){
-    unsigned char d = digit(n);
+    unsigned char d=digit(n);
     unsigned char s[d],i=(d-1),m;
     while(n!=0){
         m=n%10;
