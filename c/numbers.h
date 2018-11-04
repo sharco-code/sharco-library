@@ -1,3 +1,6 @@
+// by sharco 
+// https://github.com/sharco-code
+
 #ifndef NUMBERS_H
 #define NUMBERS_H
 
